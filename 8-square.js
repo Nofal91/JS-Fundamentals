@@ -1,11 +1,11 @@
-let num = 3; //process.argv.slice(2);
-let arr=['X','X']
-if (Number(num)) {
-  for (let i = 0; i < num; i++) {
-      for (let j = 0; j < i-1; j++) {
-          //   process.stdout.write("X");
-          console.log(i, j);
-        }
-        console.log(i,i);
+let num = process.argv.slice(2);
+if (Number(num[0])) {
+  for (let i = 0; i < num[0]; i++) {
+    for (let j = 0; j < num; j++) {
+      process.stdout.write("X");
+    }
+    console.log();
   }
+} else {
+  console.log("Missing size");
 }
